@@ -32,7 +32,7 @@ To access this package under `pkgs.niri-stable`, you should use [`overlays.niri`
 
 The latest commit to the development branch of niri.
 
-Currently, this is exactly commit [`6c9705d`](https://github.com/YaLTeR/niri/tree/6c9705dd4b2eaba25f024d1a3efd7943fd393632) which was authored on `2025-05-01 18:37:34`.
+Currently, this is exactly commit [`e9c6f08`](https://github.com/YaLTeR/niri/tree/e9c6f08906143c3fec1ad1301d538bef4cbc1978) which was authored on `2025-05-07 19:59:57`.
 
 > [!warning]
 > `niri-unstable` is not a released version, there are no stability guarantees, and it may break your workflow from itme to time.
@@ -1374,6 +1374,22 @@ Of note is that it does not switch to the previous *index*, but the previous *wo
 <!-- sorting key: programs.niri.settings.i.outputs -->
 ## `programs.niri.settings.outputs`
 - type: `attribute set of (submodule)`
+
+
+<!-- sorting key: programs.niri.settings.i.outputs.backdrop-color -->
+## `programs.niri.settings.outputs.<name>.backdrop-color`
+- type: `null or string`
+- default: `null`
+
+> [!important]
+> This option is not yet available in stable niri.
+>
+> If you wish to modify this option, you should make sure [`programs.niri.package`](#programsniripackage) is set to [`pkgs.niri-unstable`](#packagessystemniri-unstable).
+>
+> Otherwise, your system might fail to build.
+
+
+The backdrop color that niri draws for this output. This is visible between workspaces or in the overview.
 
 
 <!-- sorting key: programs.niri.settings.i.outputs.background-color -->
